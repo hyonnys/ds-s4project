@@ -1,0 +1,129 @@
+<!-- <html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Calculator for Waiting Time</title>
+        <link rel="stylesheet" href="//d15gdne58bo42a.cloudfront.net/style-n.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//d15gdne58bo42a.cloudfront.net/js/common.js" async=""></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="//d15gdne58bo42a.cloudfront.net/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="//d15gdne58bo42a.cloudfront.net/icon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="//d15gdne58bo42a.cloudfront.net/icon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta http-equiv="origin-trial" content="A7CQXglZzTrThjGTBEn1rWTxHOEtkWivwzgea+NjyardrwlieSjVuyG44PkYgIPGs8Q9svD8sF3Yedn0BBBjXAkAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+        <meta http-equiv="origin-trial" content="A3vKT9yxRPjmXN3DpIiz58f5JykcWHjUo/W7hvmtjgh9jPpQgem9VbADiNovG8NkO6mRmk70Kex8/KUqAYWVWAEAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+        <meta http-equiv="origin-trial" content="A4A26Ymj79UVY7C7JGUS4BG1s7MdcDokAQf/RP0paks+RoTYbXHxceT/5L4iKcsleFCngi75YfNRGW2+SpVv1ggAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+        <meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+        <meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+        <script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202306060101/pubads_impl.js?cb=31075344" async=""></script>
+        <style data-emotion="css" data-s=""></style>
+        <link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=www.unitconverters.net" as="script">
+        <script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=www.unitconverters.net"></script>
+    </head>
+    <body>
+        <div id="headerout">
+            <div id="header">
+                <div id="logo"><a href="/"><img src="//d15gdne58bo42a.cloudfront.net/images/logo.svg" width="288" height="28" alt="UnitConverters.net"></a></div>
+            </div>
+        </div>
+        <div id="clear"></div>
+        <div id="contentout">
+            <div id="content">
+                <img src="//d15gdne58bo42a.cloudfront.net/images/calculator.svg" width="22" height="31" align="right" border="0" onclick="quickCaclShow('');" alt="calculator">
+                <div class="topnav"><a href="/">Home</a> / <a href="/length-converter.html">Length Conversion</a> / Convert m to km</div>
+                <h1>Convert m to km</h1>
+                <p>"Please provide values below to convert meter [m] to kilometer [km]."</p>
+                <div id="unquickcalc" style="display:none;"></div>
+                <form>
+                    <div id="undctable">
+                        <table align="center" cellpadding="5">
+                            <tbody>
+                                <tr>
+                                    <td class="bigtext uclabel" align="right"><label for="ucfrom">From:</label></td>
+                                    <td><input type="text" name="ucfrom" class="ucdcinput" id="ucfrom" onkeyup="ucDCUpdateResult(0);" autofocus=""></td>
+                                    <td class="bigtext"><label for="ucfrom"><b>meter</b></label></td>
+                                </tr>
+                                <tr>
+                                    <td class="bigtext uclabel" align="right"><label for="ucto">To:</label></td>		<td><input type="text" name="ucto" class="ucdcinput" id="ucto" onkeyup="ucDCUpdateResult(1);"></td>
+                                    <td class="bigtext"><label for="ucto"><b>kilometer</b></label></td>
+                                </tr>   
+                                <tr>
+                                    <td class="uclabel">&nbsp;</td><td align="center"><input type="hidden" name="ucfromunit" id="ucfromunit" value="meter [m] [1.0E+31]"><input type="hidden" name="uctounit" id="uctounit" value="kilometer [km] [1.0E+28]">			
+                                        <input type="submit" value="Convert" class="ucdcsubmit" onclick="ucDCUpdateResult(processingType);return false;"> &nbsp;
+                                        <input type="reset" value="Clear" class="ucdcsubmit">
+                                    </td>
+                                    <td colspan="2">&nbsp;</td>	
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div id="ucresult" class="ucresulttext"></div>
+                    </div>
+                </form>
+                <script>noValidation=0;var processingType = 0;</script>
+                <h3>신장 이식</h3>
+                <p>
+                    <b>정의:</b>
+                    .
+                </p>
+                <p>
+                    <b>조건:</b>
+                    .
+                </p>
+                <h3>조직적합항원검사(HLA)</h3>
+                <p>
+                    <b>조직적합검사(HLA Matching)</b>
+                    .
+                </p>
+                <p>
+                    <b>패널반응항체검사(PRA)</b>
+                    .
+                </p>
+                <h3>임파구 교차검사</h3>
+                <p>
+                    <b>임파구 교차검사</b>
+                    .
+                </p>
+                <p>
+                    <b>신장이식이란?</b>
+                    .
+                </p>
+                <h3>일반 신체검사</h3>
+                <p>
+                    <b>일반 신체검사</b>
+                    .
+                </p>
+                <p>
+                    <b>신장이식이란?</b>
+                    .
+                </p>
+        </div>
+        <div id="footer">
+            <div id="footerin">
+                <div id="footernav">
+                    <a href="https://post.naver.com/viewer/postView.nhn?volumeNo=26212969&memberNo=29179092&vType=VERTICAL">신장 이식이란?</a>
+                    <a href="https://blog.naver.com/PostView.nhn?blogId=hyouncho2&logNo=221017760913">장기이식 검사 종류</a>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prediction App Title</title>
+    </head>
+    <body>
+        <h1>Prediction App</h1>
+        <form action="/submit" method='POST'>
+            <p>
+                <label for="input1">First Input</label><br>
+                <input type="number" name="input1">
+                <input type="radio" id="Category 1" name="Category 1" value=0 checked>
+                <label for="Category 1">0</label>
+                <input type="radio" id="Category 1" name="Category 1" value=1>
+                <label for="Category 1">1</label>
+            <p><button type="submit">Submit</button></p>
+        </form>
+    </body>
+</html>
