@@ -108,22 +108,72 @@
     </body>
 </html> -->
 
-<!DOCTYPE html>
+
 <html>
-    <head>
-        <title>Prediction App Title</title>
-    </head>
     <body>
-        <h1>Prediction App</h1>
-        <form action="/submit" method='POST'>
-            <p>
-                <label for="input1">First Input</label><br>
-                <input type="number" name="input1">
-                <input type="radio" id="Category 1" name="Category 1" value=0 checked>
-                <label for="Category 1">0</label>
-                <input type="radio" id="Category 1" name="Category 1" value=1>
-                <label for="Category 1">1</label>
-            <p><button type="submit">Submit</button></p>
+
+        <center>
+
+        <h1> 신장이식 대기기간 예측 </h1><br>
+        
+        <form name='age_cat' action='/' method="POST">
+            <label for="age_cat">연령대 그룹</label>
+            <select name="age_cat">
+              <option value="select">=====선택=====</option>
+              <option value="below18">18세 미만</option>
+              <option value="from18to60">18세 이상 60세 이하</option>
+              <option value="over60">60세 초과</option>
+            </select>
         </form>
+
+        <form name='underlying_disease' action='/' method="POST">
+            <label for="underlying_disease">원인 질환</label>
+            <select name="underlying_disease">
+              <option value="select">=======선택=======</option>
+              <option value="HUS">HUS(용혈성요독증후군)</option>
+              <option value="GNS">GNS(효소의 일종)</option>
+              <option value="PN">PN(급성신우신염)</option>
+              <option value="others">기타</option>
+            </select>
+        </form>
+
+        <form id='blood_group' action='/' method="POST">
+            <label for="blood_group">혈액형</label>
+            <select name="blood_group">
+              <option value="select">=======선택=======</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="O">O</option>
+              <option value="AB">AB</option>
+            </select>
+        </form>
+
+        <form id='gestation' action='/' method="POST">
+            <label for="gestation">임신 여부</label>
+            <select name="gestation">
+              <option value="select">=======선택=======</option>
+              <option value="No">No</option>
+              <option value="Yes">Yes</option>
+            </select>
+        </form>
+
+        <form id='cPRA_cat' action='/' method="POST">
+            <label for="cPRA_cat">패널반응항체(PRA) 수치범위</label>
+            <select name="cPRA_cat">
+              <option value="select">=======선택=======</option>
+              <option value="zero">0</option>
+              <option value="zeroto50">0 ~ 50</option>
+              <option value="from50to80">50 ~ 80</option>
+              <option value="over80">80 초과</option>
+            </select>
+        </form>        
+
+        <form id='dialysis_duration' action='/' method="POST">
+            <b> 투석 횟수 :  <input type='int', name='dialysis_duration', placeholder="입력하세요."> <br><br>
+             <input type="submit" , value='predict!' >
+         </form>
+
+        </center>
+
     </body>
 </html>
